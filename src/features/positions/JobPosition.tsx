@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { Badge } from '../UI/Badge';
-import { Card } from '../UI/Card';
-import { Stack } from '../UI/Stack';
+import { Badge } from '../../UI/Badge';
+import { Card } from '../../UI/Card';
+import { Stack } from '../../UI/Stack';
 
 export type JobPositionTypes = {
 	id: number;

@@ -1,4 +1,17 @@
-import { JobPositionTypes } from '../../components/JobPosition';
+import { createSlice } from '@reduxjs/toolkit';
+import { JobPositionTypes } from './JobPosition';
+
+const positionsSlice = createSlice({
+	name: '@@positions',
+	initialState: [],
+	reducers: {
+		addPositions: (_, action) => action.payload,
+	},
+});
+
+export const { addPositions } = positionsSlice.actions;
+
+export const positionsReducer = positionsSlice.reducer;
 
 export const selectAllPositions = (state: any): JobPositionTypes[] =>
 	state.positions;
